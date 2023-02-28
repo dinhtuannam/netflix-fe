@@ -1,12 +1,14 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { PublicRoutes  } from './routes/PublicRoutes';
-import { PrivateRoutes } from './routes/PrivateRoutes'
+import { PublicRoutes } from './routes/PublicRoutes';
+import { PrivateRoutes } from './routes/PrivateRoutes';
 import { ProtectRoutes } from './routes/ProtectRoutes';
-import { ProtectAdminRoutes , AdminRoutes } from './routes/AdminRoutes';
+import { ProtectAdminRoutes, AdminRoutes } from './routes/AdminRoutes';
+import ScrollToTop from './helpers/ScrollToTop';
 function App() {
     return (
         <Router>
+            <ScrollToTop />
             <div className="App">
                 <Routes>
                     {PublicRoutes.map((value, index) => {
@@ -31,15 +33,15 @@ function App() {
                         return (
                             <Route element={<ProtectRoutes />} key="protectRoutes">
                                 <Route
-                                exact
-                                path={value.path}
-                                element={
-                                    <Layout>
-                                        <Page />
-                                    </Layout>
-                                }
-                                key={value.path}
-                            />
+                                    exact
+                                    path={value.path}
+                                    element={
+                                        <Layout>
+                                            <Page />
+                                        </Layout>
+                                    }
+                                    key={value.path}
+                                />
                             </Route>
                         );
                     })}
@@ -49,15 +51,15 @@ function App() {
                         return (
                             <Route element={<ProtectAdminRoutes />} key="protectAdminRoutes">
                                 <Route
-                                exact
-                                path={value.path}
-                                element={
-                                    <Layout>
-                                        <Page />
-                                    </Layout>
-                                }
-                                key={value.path}
-                            />
+                                    exact
+                                    path={value.path}
+                                    element={
+                                        <Layout>
+                                            <Page />
+                                        </Layout>
+                                    }
+                                    key={value.path}
+                                />
                             </Route>
                         );
                     })}

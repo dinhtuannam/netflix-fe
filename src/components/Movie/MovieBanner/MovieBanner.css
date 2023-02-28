@@ -1,0 +1,101 @@
+.movie-banner-container {
+    background-color: #000;
+}
+
+.movie-banner {
+    margin-top: -70px;
+    font-size: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.movie-banner::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(52, 73, 94, 0.2549019607843137), #181818 94%);
+    position: absolute;
+    z-index: 1;
+}
+
+.banner-info-container {
+    z-index: 2;
+    position: relative;
+    display: flex;
+}
+
+.detail-poster {
+    overflow: hidden;
+    height: 450px;
+}
+
+.detail-poster .poster {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.detail-info {
+    width: 62%;
+}
+.banner-info-title {
+    color: #fff;
+    letter-spacing: 1px;
+}
+.banner-overview {
+    color: #fff;
+    margin-top: 8px;
+    margin-bottom: 28px;
+    font-weight: 400;
+    text-align: justify;
+}
+.banner-time {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+}
+.banner-releasedate {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.banner-genres-container {
+    margin-top: 36px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.banner-genres-item {
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 6px 10px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.banner-btn {
+    margin-top: 46px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.watch-span {
+    border: 0px solid #000;
+    background-color: red;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin-right: 22px;
+    cursor: pointer;
+}
+
+.addplaylist-span {
+    background-color: #34495e;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin-right: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,22 @@
+.content-movie-item {
+    height: 100%;
+    background-color: transparent;
+    color: #fff;
+}
+
+.content-poster-img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.2s ease-in;
+}
+
+.content-poster-img:hover {
+    opacity: 0.8;
+}
+
+.content-poster-title {
+    text-align: center;
+    padding: 4px 0px 8px 0px;
+}

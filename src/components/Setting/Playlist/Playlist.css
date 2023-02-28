@@ -1,0 +1,54 @@
+.setting-playlist-container{
+    border-top: 1px solid #555555;
+    display: flex;
+    flex-wrap: wrap;
+}
+.setting-playlist-item{
+    color:#fff;
+    list-style: none;
+    display: flex;
+    margin: 16px 8px;
+    width: 400px;
+}
+
+.setting-playlist-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.setting-playlist-img{
+    width: 120px;
+    height: 166px;
+    margin-right: 20px;
+}
+
+.playlist-item-img{
+    width: 120px;
+    height: 166px;
+}
+.setting-playlist-title{
+    letter-spacing: .8px;
+}
+
+.setting-playlist-date,.setting-playlist-title,.setting-playlist-rating{
+    margin-bottom: 16px;
+}
+
+.setting-playlist-btnWatch,.setting-playlist-btnDel{
+    margin-right: 8px;
+    padding: 4px 6px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.setting-playlist-btnWatch{
+    background-color: red;
+}
+
+.setting-playlist-btnDel{
+    background-color: #34495e;
+}

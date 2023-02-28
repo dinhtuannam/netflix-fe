@@ -1,0 +1,21 @@
+.caster-slider-container {
+    margin-bottom: 80px;
+}
+
+.cast-title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.caster-name {
+    color: #fff;
+    text-align: center;
+    margin: 8px 0px;
+}
+
+.caster-character {
+    color: #fff;
+    opacity: 0.6;
+    text-align: center;
+}

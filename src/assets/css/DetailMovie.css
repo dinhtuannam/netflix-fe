@@ -1,0 +1,17 @@
+.detail-movie-content {
+    background: #181818;
+    //padding: var(--margin-left-right);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.trailer-title {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.trailer-video {
+    display: flex;
+    justify-content: center;
+}

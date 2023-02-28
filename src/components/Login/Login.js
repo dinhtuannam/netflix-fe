@@ -1,36 +1,35 @@
 import NetflixLogin from '../../assets/image/login-img.png';
 import NetflixLogo from '../../assets/image/netflix-img.png';
 import './Login.css';
-import { Link , useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Fragment, useState } from 'react';
-import { useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux';
 import { loginUser } from '../../redux/apiRequest';
 
 function Login() {
-    const [username,setUserName] = useState('');
-    const [userpass,setUserPass] = useState('');
-    const [error,setError] = useState('');
+    const [username, setUserName] = useState('');
+    const [userpass, setUserPass] = useState('');
+    const [error, setError] = useState('');
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-    const HandleSubmit = (e) =>{
+    const HandleSubmit = (e) => {
         e.preventDefault();
-        if(!username){
-            setError("User's name can not be required")
+        if (!username) {
+            setError("User's name can not be required");
             return false;
         }
-        if(!userpass){
-            setError("User's password can not be required")
+        if (!userpass) {
+            setError("User's password can not be required");
             return false;
         }
         setError('');
         const user = {
             username: username,
-            password: userpass
-        }
-        loginUser(user,dispatch,navigate)
-
-    }
+            password: userpass,
+        };
+        // loginUser(user,dispatch,navigate)
+    };
 
     return (
         <div className="login-container">
@@ -50,17 +49,31 @@ function Login() {
                             <form onSubmit={HandleSubmit}>
                                 <div className="input-container">
                                     <label className="login-label-textfield">
-                                        <input className="form-login-textfield" placeholder="Email or phone number" value={username} onChange={(e)=>setUserName(e.target.value)}/>
+                                        <input
+                                            className="form-login-textfield"
+                                            placeholder="Email or phone number"
+                                            value={username}
+                                            onChange={(e) => setUserName(e.target.value)}
+                                        />
                                     </label>
                                 </div>
                                 <div className="input-container">
                                     <label className="login-label-textfield">
-                                        <input className="form-login-textfield" placeholder="Password" value={userpass} onChange={(e)=>setUserPass(e.target.value)}/>
+                                        <input
+                                            className="form-login-textfield"
+                                            placeholder="Password"
+                                            value={userpass}
+                                            onChange={(e) => setUserPass(e.target.value)}
+                                        />
                                     </label>
                                 </div>
-                                {error?<p className='login-error'>{error}</p>:<Fragment></Fragment>}
+                                {error ? <p className="login-error">{error}</p> : <Fragment></Fragment>}
                                 <div className="submit-btn-container">
-                                    <input className="form-login-submit-input !bg-[#e50914] hover:opacity-80 ease-in-out duration-200" type="submit" value="Sign In" />                                
+                                    <input
+                                        className="form-login-submit-input !bg-[#e50914] hover:opacity-80 ease-in-out duration-200"
+                                        type="submit"
+                                        value="Sign In"
+                                    />
                                 </div>
 
                                 <div className="login-des">

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Scrollbar, A11y } from 'swiper';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './ContentSlider.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -21,7 +21,7 @@ function ContentSlider({ data }) {
                     },
                     768: {
                         slidesPerView: 4,
-                        spaceBetween: 50
+                        spaceBetween: 50,
                     },
                 }}
                 spaceBetween={50}
@@ -34,15 +34,13 @@ function ContentSlider({ data }) {
                     return (
                         <SwiperSlide key={index}>
                             <div className="content-movie-item">
-                                {/* <Link to={`/movie/id=${movie.id}`}> */}
-                                <a href={`http://localhost:3000/movie/id=${movie.id}`}>
+                                <Link to={`/movie/id=${movie.id}`}>
                                     <img
                                         src={apiImgPath + movie.poster_path}
                                         className="content-poster-img"
                                         alt="movie poster"
                                     />
-                                </a>
-                                {/* </Link> */}
+                                </Link>
                                 <p className="content-poster-title text-[12px] lg:text-[18px]">{movie.title}</p>
                             </div>
                         </SwiperSlide>

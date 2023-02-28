@@ -1,17 +1,13 @@
 import NetflixLogin from '../../assets/image/login-img.png';
 import NetflixLogo from '../../assets/image/netflix-img.png';
 import './Login.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Fragment, useState } from 'react';
-import { useDispatch } from 'react-redux';
-// import { loginUser } from '../../redux/apiRequest';
 
 function Login() {
     const [username, setUserName] = useState('');
     const [userpass, setUserPass] = useState('');
     const [error, setError] = useState('');
-    const dispatch = useDispatch();
-    const navigate = useNavigate();
 
     const HandleSubmit = (e) => {
         e.preventDefault();
@@ -28,7 +24,6 @@ function Login() {
             username: username,
             password: userpass,
         };
-        // loginUser(user,dispatch,navigate)
     };
 
     return (

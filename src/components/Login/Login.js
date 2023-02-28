@@ -4,7 +4,7 @@ import './Login.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { Fragment, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { loginUser } from '../../redux/apiRequest';
+// import { loginUser } from '../../redux/apiRequest';
 
 function Login() {
     const [username, setUserName] = useState('');

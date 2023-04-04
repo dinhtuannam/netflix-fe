@@ -1,0 +1,10 @@
+.trailer-title {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.trailer-video {
+    display: flex;
+    justify-content: center;
+}

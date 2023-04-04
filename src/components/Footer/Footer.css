@@ -1,0 +1,31 @@
+#footer {
+    background-color: var(--color-background);
+    color: #737373;
+    border-top: 8px solid #222;
+    font-size: 1em;
+    display: block;
+}
+
+.footerLink {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 16px;
+    min-width: 100px;
+    padding: 0 12px 0 0;
+    vertical-align: top;
+    width: 25%;
+}
+
+.footerText {
+    margin-bottom: 30px;
+}
+
+.footer-country {
+    margin: 30px 0px;
+    border: 1px solid #737373;
+    display: inline-block;
+}
+
+.footer-country p {
+    padding: 6px 14px;
+}

@@ -1,0 +1,138 @@
+.Login-image {
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.login-img-container {
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 30px 40px 40px rgba(0, 0, 0, 0.685);
+}
+
+.login-logo {
+    position: absolute;
+    display: block;
+}
+
+.netflix-logo {
+    padding: 16px 30px;
+    max-width: 238px;
+    max-height: 78px;
+}
+
+.register-form {
+    width: 460px;
+    height: 520px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    border-radius: 4px;
+    margin: 20px auto;
+}
+.register-form-container {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    margin-top: 58px;
+}
+
+.register-container {
+    position: relative;
+}
+
+.login-wrapper-background {
+    background-color: black;
+    background-size: cover;
+    display: block;
+    height: 120vh;
+    min-height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    z-index: -1;
+}
+
+.form-container {
+    padding: 60px 68px 40px 68px;
+}
+
+.form-container .register-title {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.form-login-textfield {
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background: #323232;
+    border-bottom: 0.1rem solid transparent;
+}
+
+.form-login-textfield:focus {
+    outline: none;
+    border-bottom: 0.1rem solid #e87c03;
+}
+
+.login-label-textfield {
+    width: 100%;
+}
+.input-container {
+    padding: 9px 0px;
+}
+
+.submit-btn-container {
+    margin-top: 2px;
+}
+
+.submit-btn-label {
+    width: 100%;
+}
+.form-login-submit-input {
+    width: 100%;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 24px 0 12px;
+    line-height: 30px;
+    font-size: 20px;
+    background: #e50914;
+    color: #fff;
+    padding: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.login-des {
+    margin-top: 24px;
+}
+
+.login-des-text {
+    display: inline-block;
+    margin-right: 10px;
+    opacity: 0.5;
+    font-size: 16px;
+}
+
+.login-footer-text {
+    margin-top: 10px;
+    opacity: 0.5;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+}
+
+.login-error {
+    color: #e87c03;
+    margin-top: 10px;
+    margin-bottom: -4px;
+}

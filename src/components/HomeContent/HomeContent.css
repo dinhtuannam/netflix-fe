@@ -1,0 +1,31 @@
+.home-content-container {
+    background: #181818;
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+.content-paragraph {
+    padding-bottom: 20px;
+}
+
+.content-intro {
+    word-wrap: break-word;
+}
+
+.content-des {
+    padding-top: 10px;
+}
+
+.content-slider-name {
+    margin: 15px 34px 15px 0px;
+    display: inline-block;
+}
+
+.content-slider-explore {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.content-slider-name {
+    font-size: 22px;
+}

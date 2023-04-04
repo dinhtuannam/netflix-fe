@@ -1,0 +1,58 @@
+.setting-container {
+    display: flex;
+}
+.setting-controller {
+    width: 232px;
+    background-color: #232323;
+    height: 100vh;
+    overflow: auto;
+    position: fixed;
+}
+
+.setting-controller-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.setting-controller-title {
+    color: #e4e6eb;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-left: 44px;
+    margin-bottom: 14px;
+}
+
+.setting-controller-item {
+    color: #e4e6eb;
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    margin-left: 22px;
+    margin-right: 22px;
+    padding: 12px 20px;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px solid #232323;
+}
+
+.setting-controller-item:hover {
+    background-color: #1a1a1a;
+    border-color: #323232;
+}
+
+.setting-controller-icon {
+    margin-right: 8px;
+}
+
+.setting-content {
+    width: 100%;
+    background-color: #1a1a1a;
+    min-height: calc(100vh - 80px);
+}
+
+.setting-btn-active {
+    background-color: #1a1a1a;
+    border-color: #323232;
+}

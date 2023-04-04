@@ -1,0 +1,55 @@
+.setting-content-info-container{
+    margin: 10px 20px;
+}
+
+.setting-content-info-title{
+    color: #fff;
+    margin: 20px 8px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.setting-info-list{
+    color: #fff;
+    list-style: none;
+    padding: 0px 8px;
+    border-top: 1px solid #555555;
+}
+
+.setting-info-list p{
+    display: inline-block;
+    width: 200px;
+}
+
+.setting-info-item{
+    margin: 22px 0px;
+}
+
+.setting-update-input{
+    color: #96989c;
+    width: 230px;
+    margin-right: 50px;
+    background: #1a1a1a;
+    border: 1px solid #96989c;
+    line-height: 20px;
+    font-size: 16px;
+    transition: 1s ease;
+    outline: none;
+    padding: 1px 4px;
+}
+
+.setting-user-infomartion{
+    color: #96989c !important;
+    width: 230px !important;
+    margin-right: 50px;
+}
+
+.setting-userinfo-btn{
+    color :#529FFF !important;
+    letter-spacing: .8px;
+    cursor: pointer;
+}
+
+.setting-userinfo-btn:hover{
+    text-decoration-line: underline;
+}

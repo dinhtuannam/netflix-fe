@@ -8,12 +8,11 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { apiImgPath } from '../../../utils/publicPath';
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 SwiperCore.use([Navigation, Scrollbar, A11y]);
 
 function ContentSlider({ data }) {
-
     return (
         <div>
             <Swiper
@@ -24,7 +23,7 @@ function ContentSlider({ data }) {
                     },
                     768: {
                         slidesPerView: 4,
-                        spaceBetween: 50
+                        spaceBetween: 50,
                     },
                 }}
                 spaceBetween={50}
@@ -37,10 +36,10 @@ function ContentSlider({ data }) {
                     return (
                         <SwiperSlide key={index}>
                             <div className="content-movie-item ">
-                                <a href={`http://localhost:3000/movie/id=${movie.id}`} >
+                                <a href={`/movie/id=${movie.id}`}>
                                     <div className="lg:h-[350.25px] lg:w-[223.5px] sm:h-[156.500px] sm:w-[104.333px] st:h-[269px] st:w-[180px]">
                                         <LazyLoadImage
-                                            effect='blur'
+                                            effect="blur"
                                             src={apiImgPath + movie.poster_path}
                                             className="content-poster-img"
                                             alt="movie poster"
